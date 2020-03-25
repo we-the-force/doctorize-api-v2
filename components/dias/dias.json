@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_dias_dias",
+  "info": {
+    "name": "dias",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "enumeration",
+      "enum": [
+        "lunes",
+        "martes",
+        "miercoles",
+        "jueves",
+        "viernes"
+      ]
+    },
+    "activo": {
+      "type": "boolean"
+    },
+    "horas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "horas.horas"
+    }
+  }
+}

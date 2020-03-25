@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "pacientes",
+  "info": {
+    "name": "Pacientes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "correo": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "text"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    },
+    "curp": {
+      "type": "string"
+    },
+    "img_data": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

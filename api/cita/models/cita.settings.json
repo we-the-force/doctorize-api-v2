@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "citas",
+  "info": {
+    "name": "citas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "doctor": {
+      "via": "citas",
+      "model": "doctor"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "datetime"
+    },
+    "pago": {
+      "via": "cita",
+      "model": "pago"
+    },
+    "consultorio": {
+      "model": "consultorio"
+    }
+  }
+}

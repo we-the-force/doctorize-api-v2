@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "asistentes",
+  "info": {
+    "name": "Asistentes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "horarios": {
+      "via": "asistente",
+      "collection": "horarios"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "img_data": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "fecha_nacimiento": {
+      "type": "date"
+    }
+  }
+}

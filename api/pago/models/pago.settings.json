@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "pagos",
+  "info": {
+    "name": "Pagos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "costo": {
+      "type": "integer"
+    },
+    "metodo": {
+      "type": "enumeration",
+      "enum": [
+        "efectivo",
+        "tarjeta",
+        "transferencia",
+        "deposito",
+        "cheque"
+      ]
+    },
+    "estatus": {
+      "type": "enumeration",
+      "enum": [
+        "pendiente",
+        "confirmado"
+      ]
+    },
+    "doctor": {
+      "model": "doctor",
+      "via": "pago"
+    },
+    "cita": {
+      "model": "cita",
+      "via": "pago"
+    },
+    "paciente": {
+      "model": "paciente"
+    }
+  }
+}

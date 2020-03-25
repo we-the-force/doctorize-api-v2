@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "doctors",
+  "info": {
+    "name": "Doctores"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "cedula": {
+      "type": "string"
+    },
+    "horarios": {
+      "via": "doctor",
+      "collection": "horarios"
+    },
+    "consultorios": {
+      "collection": "consultorio",
+      "via": "doctor"
+    },
+    "pago": {
+      "via": "doctor",
+      "model": "pago"
+    },
+    "citas": {
+      "collection": "cita",
+      "via": "doctor"
+    }
+  }
+}

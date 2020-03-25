@@ -1,16 +1,36 @@
 {
-  "name": "strapi-plugin-users-permissions",
-  "version": "3.0.0-beta.19.3",
-  "description": "Protect your API with a full-authentication process based on JWT",
-  "strapi": {
-    "name": "Roles & Permissions",
-    "icon": "users",
-    "description": "users-permissions.plugin.description",
-    "required": true
+  "_from": "strapi-plugin-users-permissions@3.0.0-beta.19.3",
+  "_id": "strapi-plugin-users-permissions@3.0.0-beta.19.3",
+  "_inBundle": false,
+  "_integrity": "sha512-o9iMWdP5pyEuadsJILlbWVEJJ5cclHu3VamgbXfMaPUl5XUfA/3CjNEywfgydkD+3UV+zA/yYBPxytkoo51htA==",
+  "_location": "/strapi-plugin-users-permissions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "strapi-plugin-users-permissions@3.0.0-beta.19.3",
+    "name": "strapi-plugin-users-permissions",
+    "escapedName": "strapi-plugin-users-permissions",
+    "rawSpec": "3.0.0-beta.19.3",
+    "saveSpec": null,
+    "fetchSpec": "3.0.0-beta.19.3"
   },
-  "scripts": {
-    "test": "echo \"no tests yet\""
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-beta.19.3.tgz",
+  "_shasum": "fb0b4454e03dcb88da66535c50048f2088e59eff",
+  "_spec": "strapi-plugin-users-permissions@3.0.0-beta.19.3",
+  "_where": "/home/srlechuga/Documents/wtf/api_mydoctorize/doctorize-api-v2",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
   },
+  "bugs": {
+    "url": "https://github.com/strapi/strapi/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "@purest/providers": "^1.0.1",
     "bcryptjs": "^2.4.3",
@@ -36,14 +56,18 @@
     "strapi-utils": "3.0.0-beta.19.3",
     "uuid": "^3.1.0"
   },
+  "deprecated": false,
+  "description": "Protect your API with a full-authentication process based on JWT",
   "devDependencies": {
     "koa": "^2.8.0"
   },
-  "author": {
-    "name": "Strapi team",
-    "email": "hi@strapi.io",
-    "url": "http://strapi.io"
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
   },
+  "gitHead": "8a8929e97cde98947fdf60c38b228d34de7854db",
+  "homepage": "https://github.com/strapi/strapi#readme",
+  "license": "MIT",
   "maintainers": [
     {
       "name": "Strapi team",
@@ -51,14 +75,19 @@
       "url": "http://strapi.io"
     }
   ],
+  "name": "strapi-plugin-users-permissions",
   "repository": {
     "type": "git",
     "url": "git://github.com/strapi/strapi.git"
   },
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+  "scripts": {
+    "test": "echo \"no tests yet\""
   },
-  "license": "MIT",
-  "gitHead": "8a8929e97cde98947fdf60c38b228d34de7854db"
+  "strapi": {
+    "name": "Roles & Permissions",
+    "icon": "users",
+    "description": "users-permissions.plugin.description",
+    "required": true
+  },
+  "version": "3.0.0-beta.19.3"
 }

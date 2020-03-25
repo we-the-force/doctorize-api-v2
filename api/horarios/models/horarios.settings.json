@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "horarios",
+  "info": {
+    "name": "horarios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "asistente": {
+      "model": "asistente",
+      "via": "horarios"
+    },
+    "permisos": {
+      "type": "enumeration",
+      "enum": [
+        "agenda",
+        "pacientes",
+        "pagos",
+        "expedientes"
+      ]
+    },
+    "doctor": {
+      "model": "doctor",
+      "via": "horarios"
+    },
+    "dias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.dias"
+    },
+    "consultorio": {
+      "model": "consultorio"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "consultorios",
+  "info": {
+    "name": "Consultorios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "correo": {
+      "type": "email"
+    },
+    "doctor": {
+      "via": "consultorios",
+      "model": "doctor"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "hospital": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "integer"
+    },
+    "direccion": {
+      "type": "text"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    }
+  }
+}
