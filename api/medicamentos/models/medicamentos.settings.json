@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "medicamentos",
+  "info": {
+    "name": "Medicamentos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "tipo_medicina": {
+      "type": "string"
+    },
+    "tipo_ingesta": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "unidad": {
+      "type": "enumeration",
+      "enum": [
+        "mg",
+        "mcg",
+        "gm",
+        "unidades",
+        "porcentaje",
+        "ml",
+        "onzas",
+        "cuchara",
+        "inhalador",
+        "mghr",
+        "mcghr"
+      ]
+    },
+    "periodo": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "text"
+    },
+    "medicina_para": {
+      "type": "string"
+    },
+    "prescrita_por": {
+      "type": "string"
+    },
+    "efectos_secundarios": {
+      "type": "string"
+    },
+    "dosis": {
+      "type": "component",
+      "repeatable": true,
+      "component": "medicamento.dosis"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "medicamentos"
+    }
+  }
+}

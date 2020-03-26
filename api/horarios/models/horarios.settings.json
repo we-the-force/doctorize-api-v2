@@ -27,8 +27,8 @@
       ]
     },
     "doctor": {
-      "model": "doctor",
-      "via": "horarios"
+      "via": "horarios",
+      "model": "doctor"
     },
     "dias": {
       "type": "component",

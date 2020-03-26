@@ -18,16 +18,16 @@
       "type": "string"
     },
     "horarios": {
-      "via": "doctor",
-      "collection": "horarios"
+      "collection": "horarios",
+      "via": "doctor"
     },
     "consultorios": {
       "collection": "consultorio",
       "via": "doctor"
     },
-    "pago": {
-      "via": "doctor",
-      "model": "pago"
+    "pagos": {
+      "collection": "pago",
+      "via": "doctore"
     },
     "citas": {
       "collection": "cita",

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "vitales",
+  "info": {
+    "name": "vitales"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Temperatura": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vitales.temperatura"
+    },
+    "presion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vitales.presion"
+    },
+    "Respiracion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vitales.respiracion"
+    },
+    "pulso": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vitales.pulso"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "vitales"
+    },
+    "consulta": {
+      "via": "vitale",
+      "model": "consulta"
+    }
+  }
+}

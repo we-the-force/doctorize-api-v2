@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "consultas",
+  "info": {
+    "name": "Consulta"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "motivo": {
+      "type": "text"
+    },
+    "notas": {
+      "type": "text"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "medicamentos": {
+      "collection": "medicamentos"
+    },
+    "cita": {
+      "model": "cita"
+    },
+    "pago": {
+      "model": "pago"
+    },
+    "vitale": {
+      "model": "vitales",
+      "via": "consulta"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "consultas"
+    }
+  }
+}

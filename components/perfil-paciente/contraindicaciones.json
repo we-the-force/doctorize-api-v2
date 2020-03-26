@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_contraindicaciones",
+  "info": {
+    "name": "contraindicaciones",
+    "icon": "exclamation-triangle"
+  },
+  "options": {},
+  "attributes": {
+    "contraindicacion": {
+      "type": "text"
+    }
+  }
+}

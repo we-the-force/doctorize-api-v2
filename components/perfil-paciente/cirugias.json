@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_cirugias",
+  "info": {
+    "name": "cirugias",
+    "icon": "hospital-alt"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "implante": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "especialista": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "text"
+    }
+  }
+}

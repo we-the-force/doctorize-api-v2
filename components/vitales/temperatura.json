@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "components_vitales_temperaturas",
+  "info": {
+    "name": "Temperatura",
+    "icon": "temperature-high"
+  },
+  "options": {},
+  "attributes": {
+    "unidad": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    }
+  }
+}

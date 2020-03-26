@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_historia_socials",
+  "info": {
+    "name": "Historia_social",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "ocupacion": {
+      "type": "string"
+    },
+    "educacion": {
+      "type": "string"
+    },
+    "lugar_nacimiento": {
+      "type": "string"
+    },
+    "estado_civil": {
+      "type": "string"
+    },
+    "hijos": {
+      "type": "integer"
+    },
+    "orientacion_sexual": {
+      "type": "string"
+    },
+    "fuma": {
+      "type": "boolean"
+    },
+    "alcohol": {
+      "type": "boolean"
+    },
+    "sustancias": {
+      "type": "string"
+    },
+    "ejercicio": {
+      "type": "string"
+    },
+    "estres": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_historia_familiars",
+  "info": {
+    "name": "Historia_familiar",
+    "icon": "home"
+  },
+  "options": {},
+  "attributes": {
+    "relacion_familiar": {
+      "type": "string"
+    },
+    "descripcion_condicion_medica": {
+      "type": "text"
+    }
+  }
+}

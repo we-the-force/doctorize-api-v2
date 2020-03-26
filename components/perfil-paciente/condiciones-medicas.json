@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_condiciones_medicas",
+  "info": {
+    "name": "Condiciones_Medicas",
+    "icon": "notes-medical"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "Activa": {
+      "type": "boolean"
+    },
+    "fecha_diagnostico": {
+      "type": "date"
+    },
+    "tratado_por": {
+      "type": "string"
+    },
+    "medicamentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.medicamentos"
+    },
+    "notas": {
+      "type": "text"
+    }
+  }
+}

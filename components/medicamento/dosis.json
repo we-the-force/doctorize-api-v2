@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_medicamento_doses",
+  "info": {
+    "name": "dosis",
+    "icon": "hourglass-half"
+  },
+  "options": {},
+  "attributes": {
+    "dosis": {
+      "type": "integer"
+    },
+    "frecuencia": {
+      "type": "string"
+    },
+    "cuando": {
+      "type": "string"
+    }
+  }
+}

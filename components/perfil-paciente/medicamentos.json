@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_medicamentos",
+  "info": {
+    "name": "medicamentos",
+    "icon": "flask"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

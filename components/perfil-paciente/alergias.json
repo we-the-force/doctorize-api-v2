@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_alergias",
+  "info": {
+    "name": "Alergias",
+    "icon": "spider"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "causa": {
+      "type": "string"
+    },
+    "Reacciones": {
+      "type": "string"
+    },
+    "Frecuencia": {
+      "type": "string"
+    },
+    "primer_diagnostico": {
+      "type": "date"
+    },
+    "medicamentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.medicamentos"
+    }
+  }
+}

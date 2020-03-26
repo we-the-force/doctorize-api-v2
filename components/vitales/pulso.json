@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "components_vitales_pulsos",
+  "info": {
+    "name": "pulso",
+    "icon": "heartbeat"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "decimal"
+    },
+    "unidad": {
+      "type": "string"
+    }
+  }
+}

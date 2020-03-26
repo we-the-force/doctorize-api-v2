@@ -36,6 +36,58 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "condicion_medica": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.condiciones-medicas"
+    },
+    "Alergias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.alergias"
+    },
+    "Historia_social": {
+      "type": "component",
+      "repeatable": false,
+      "component": "perfil-paciente.historia-social"
+    },
+    "HIstoria_familiar": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.historia-familiar"
+    },
+    "contraindicaciones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.contraindicaciones"
+    },
+    "hospitalizacion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.hospitalizaciones"
+    },
+    "cirugias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.cirugias"
+    },
+    "vacunas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.vacunas"
+    },
+    "medicamentos": {
+      "via": "paciente",
+      "collection": "medicamentos"
+    },
+    "vitales": {
+      "via": "paciente",
+      "collection": "vitales"
+    },
+    "consultas": {
+      "via": "paciente",
+      "collection": "consulta"
     }
   }
 }

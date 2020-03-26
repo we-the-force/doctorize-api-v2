@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_hospitalizaciones",
+  "info": {
+    "name": "hospitalizaciones",
+    "icon": "hospital-symbol"
+  },
+  "options": {},
+  "attributes": {
+    "admision": {
+      "type": "date"
+    },
+    "alta": {
+      "type": "date"
+    },
+    "proveedor_atencion_medica": {
+      "type": "string"
+    },
+    "hospital": {
+      "type": "string"
+    },
+    "razon": {
+      "type": "string"
+    },
+    "resumen": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_perfil_paciente_vacunas",
+  "info": {
+    "name": "vacunas",
+    "icon": "plus-circle"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "contra": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "detalles": {
+      "type": "string"
+    },
+    "lote": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "text"
+    }
+  }
+}

@@ -30,16 +30,16 @@
         "confirmado"
       ]
     },
-    "doctor": {
-      "model": "doctor",
-      "via": "pago"
-    },
     "cita": {
       "model": "cita",
       "via": "pago"
     },
     "paciente": {
       "model": "paciente"
+    },
+    "doctore": {
+      "via": "pagos",
+      "model": "doctor"
     }
   }
 }
