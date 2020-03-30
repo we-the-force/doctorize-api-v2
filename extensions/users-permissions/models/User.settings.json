@@ -54,17 +54,18 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "img_data": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "telefono": {
       "type": "biginteger"
     },
     "fecha_nacimiento": {
       "type": "date"
+    },
+    "doctore": {
+      "model": "doctor",
+      "via": "user"
+    },
+    "img_data": {
+      "type": "text"
     }
   }
 }

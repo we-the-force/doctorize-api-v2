@@ -10,10 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user"
-    },
     "cedula": {
       "type": "string"
     },
@@ -32,6 +28,11 @@
     "citas": {
       "collection": "cita",
       "via": "doctor"
+    },
+    "user": {
+      "via": "doctore",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
