@@ -10,8 +10,19 @@
     "timestamps": true
   },
   "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
     "cedula": {
       "type": "string"
+    },
+    "especialidad": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "doctor"
     },
     "horarios": {
       "collection": "horarios",
@@ -23,16 +34,11 @@
     },
     "pagos": {
       "collection": "pago",
-      "via": "doctore"
+      "via": "doctor"
     },
     "citas": {
       "collection": "cita",
       "via": "doctor"
-    },
-    "user": {
-      "via": "doctore",
-      "plugin": "users-permissions",
-      "model": "user"
     }
   }
 }

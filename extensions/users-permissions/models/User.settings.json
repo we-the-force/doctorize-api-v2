@@ -60,12 +60,15 @@
     "fecha_nacimiento": {
       "type": "date"
     },
-    "doctore": {
-      "model": "doctor",
-      "via": "user"
-    },
     "img_data": {
-      "type": "text"
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "doctor": {
+      "via": "user",
+      "model": "doctor"
     }
   }
 }

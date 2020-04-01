@@ -13,10 +13,6 @@
     "correo": {
       "type": "email"
     },
-    "doctor": {
-      "via": "consultorios",
-      "model": "doctor"
-    },
     "nombre": {
       "type": "string"
     },
@@ -37,6 +33,10 @@
     },
     "lng": {
       "type": "float"
+    },
+    "doctor": {
+      "via": "consultorios",
+      "model": "doctor"
     }
   }
 }

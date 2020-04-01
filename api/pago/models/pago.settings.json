@@ -37,7 +37,7 @@
     "paciente": {
       "model": "paciente"
     },
-    "doctore": {
+    "doctor": {
       "via": "pagos",
       "model": "doctor"
     }

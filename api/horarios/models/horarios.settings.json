@@ -26,10 +26,6 @@
         "expedientes"
       ]
     },
-    "doctor": {
-      "via": "horarios",
-      "model": "doctor"
-    },
     "dias": {
       "type": "component",
       "repeatable": true,
@@ -37,6 +33,10 @@
     },
     "consultorio": {
       "model": "consultorio"
+    },
+    "doctor": {
+      "via": "horarios",
+      "model": "doctor"
     }
   }
 }

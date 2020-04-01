@@ -10,10 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "doctor": {
-      "via": "citas",
-      "model": "doctor"
-    },
     "correo": {
       "type": "email"
     },
@@ -32,6 +28,10 @@
     },
     "consultorio": {
       "model": "consultorio"
+    },
+    "doctor": {
+      "via": "citas",
+      "model": "doctor"
     }
   }
 }
