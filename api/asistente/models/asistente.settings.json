@@ -10,10 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "horarios": {
-      "via": "asistente",
-      "collection": "horarios"
-    },
     "nombre": {
       "type": "string"
     },
@@ -31,6 +27,22 @@
     },
     "fecha_nacimiento": {
       "type": "date"
+    },
+    "asistente_permisos": {
+      "collection": "asistente-permisos",
+      "via": "asistente"
+    },
+    "doctor": {
+      "model": "doctor",
+      "via": "asistentes"
+    },
+    "Activo": {
+      "type": "boolean",
+      "default": true
+    },
+    "horarios": {
+      "via": "asistente",
+      "collection": "horarios"
     }
   }
 }

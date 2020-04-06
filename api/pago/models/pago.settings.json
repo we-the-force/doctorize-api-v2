@@ -11,17 +11,7 @@
   },
   "attributes": {
     "costo": {
-      "type": "integer"
-    },
-    "metodo": {
-      "type": "enumeration",
-      "enum": [
-        "efectivo",
-        "tarjeta",
-        "transferencia",
-        "deposito",
-        "cheque"
-      ]
+      "type": "decimal"
     },
     "estatus": {
       "type": "enumeration",
@@ -35,11 +25,19 @@
       "via": "pago"
     },
     "paciente": {
+      "via": "pagos",
       "model": "paciente"
     },
     "doctor": {
-      "via": "pagos",
-      "model": "doctor"
+      "model": "doctor",
+      "via": "pagos"
+    },
+    "consulta": {
+      "model": "consulta",
+      "via": "pago"
+    },
+    "metodo": {
+      "type": "string"
     }
   }
 }

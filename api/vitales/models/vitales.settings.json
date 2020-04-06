@@ -31,8 +31,8 @@
       "component": "vitales.pulso"
     },
     "paciente": {
-      "model": "paciente",
-      "via": "vitales"
+      "via": "vitales",
+      "model": "paciente"
     },
     "consulta": {
       "via": "vitale",

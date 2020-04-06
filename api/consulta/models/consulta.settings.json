@@ -29,6 +29,7 @@
       "model": "cita"
     },
     "pago": {
+      "via": "consulta",
       "model": "pago"
     },
     "vitale": {
@@ -36,8 +37,11 @@
       "via": "consulta"
     },
     "paciente": {
-      "model": "paciente",
-      "via": "consultas"
+      "via": "consultas",
+      "model": "paciente"
+    },
+    "doctor": {
+      "model": "doctor"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "asistente_permisos",
+  "info": {
+    "name": "AsistentePermisos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Pagos": {
+      "type": "boolean"
+    },
+    "Expedientes": {
+      "type": "boolean"
+    },
+    "Pacientes": {
+      "type": "boolean"
+    },
+    "Agenda": {
+      "type": "boolean"
+    },
+    "asistente": {
+      "via": "asistente_permisos",
+      "model": "asistente"
+    },
+    "consultorio": {
+      "model": "consultorio",
+      "via": "asistente_consultorios"
+    }
+  }
+}

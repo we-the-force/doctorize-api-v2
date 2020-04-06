@@ -35,8 +35,33 @@
       "type": "float"
     },
     "doctor": {
-      "via": "consultorios",
-      "model": "doctor"
+      "model": "doctor",
+      "via": "consultorios"
+    },
+    "HorarioApertura": {
+      "type": "time"
+    },
+    "HorarioCierre": {
+      "type": "time"
+    },
+    "InicioComida": {
+      "type": "time"
+    },
+    "FinComida": {
+      "type": "time"
+    },
+    "Dias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consultorio.dias"
+    },
+    "Activo": {
+      "type": "boolean",
+      "default": true
+    },
+    "asistente_consultorios": {
+      "via": "consultorio",
+      "collection": "asistente-permisos"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/asistente-permisos",
+      "handler": "asistente-permisos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/asistente-permisos/count",
+      "handler": "asistente-permisos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/asistente-permisos/:id",
+      "handler": "asistente-permisos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/asistente-permisos",
+      "handler": "asistente-permisos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/asistente-permisos/:id",
+      "handler": "asistente-permisos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/asistente-permisos/:id",
+      "handler": "asistente-permisos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

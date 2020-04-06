@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_consultorio_dias",
+  "info": {
+    "name": "Dias",
+    "icon": "calendar-day"
+  },
+  "options": {},
+  "attributes": {
+    "dia": {
+      "type": "integer"
+    }
+  }
+}

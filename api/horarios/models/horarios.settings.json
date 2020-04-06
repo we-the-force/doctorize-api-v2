@@ -13,19 +13,6 @@
     "nombre": {
       "type": "string"
     },
-    "asistente": {
-      "model": "asistente",
-      "via": "horarios"
-    },
-    "permisos": {
-      "type": "enumeration",
-      "enum": [
-        "agenda",
-        "pacientes",
-        "pagos",
-        "expedientes"
-      ]
-    },
     "dias": {
       "type": "component",
       "repeatable": true,
@@ -35,8 +22,16 @@
       "model": "consultorio"
     },
     "doctor": {
-      "via": "horarios",
-      "model": "doctor"
+      "model": "doctor",
+      "via": "horarios"
+    },
+    "asistente": {
+      "model": "asistente",
+      "via": "horarios"
+    },
+    "Activo": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

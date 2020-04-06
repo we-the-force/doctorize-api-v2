@@ -20,7 +20,7 @@
       "type": "string"
     },
     "fecha": {
-      "type": "datetime"
+      "type": "date"
     },
     "pago": {
       "via": "cita",
@@ -30,8 +30,11 @@
       "model": "consultorio"
     },
     "doctor": {
-      "via": "citas",
-      "model": "doctor"
+      "model": "doctor",
+      "via": "citas"
+    },
+    "hora": {
+      "type": "time"
     }
   }
 }

@@ -14,7 +14,9 @@
         "martes",
         "miercoles",
         "jueves",
-        "viernes"
+        "viernes",
+        "sabado",
+        "domingo"
       ]
     },
     "activo": {

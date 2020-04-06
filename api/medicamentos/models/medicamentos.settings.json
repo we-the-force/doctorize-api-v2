@@ -59,8 +59,8 @@
       "component": "medicamento.dosis"
     },
     "paciente": {
-      "model": "paciente",
-      "via": "medicamentos"
+      "via": "medicamentos",
+      "model": "paciente"
     }
   }
 }

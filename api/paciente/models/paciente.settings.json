@@ -78,16 +78,33 @@
       "component": "perfil-paciente.vacunas"
     },
     "medicamentos": {
-      "via": "paciente",
-      "collection": "medicamentos"
+      "collection": "medicamentos",
+      "via": "paciente"
     },
     "vitales": {
-      "via": "paciente",
-      "collection": "vitales"
+      "collection": "vitales",
+      "via": "paciente"
     },
     "consultas": {
-      "via": "paciente",
-      "collection": "consulta"
+      "collection": "consulta",
+      "via": "paciente"
+    },
+    "peso": {
+      "type": "string"
+    },
+    "estatura": {
+      "type": "string"
+    },
+    "tipo_sangre": {
+      "type": "string"
+    },
+    "pagos": {
+      "collection": "pago",
+      "via": "paciente"
+    },
+    "doctor": {
+      "model": "doctor",
+      "via": "pacientes"
     }
   }
 }
