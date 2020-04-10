@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "historia_familiars",
+  "info": {
+    "name": "historia familiar"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "relacion_familiar": {
+      "type": "string"
+    },
+    "descripcion_condicion_familiar": {
+      "type": "text"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "historias_familiares"
+    }
+  }
+}

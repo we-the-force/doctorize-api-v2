@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "contraindicaciones",
+  "info": {
+    "name": "contraindicaciones"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "contraindicacion": {
+      "type": "text"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "contraindicaciones"
+    }
+  }
+}

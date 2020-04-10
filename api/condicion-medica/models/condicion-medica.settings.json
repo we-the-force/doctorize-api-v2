@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "condicion_medicas",
+  "info": {
+    "name": "condicion medica"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "activa": {
+      "type": "boolean"
+    },
+    "fecha_diagnostico": {
+      "type": "date"
+    },
+    "tratado_por": {
+      "type": "string"
+    },
+    "medicamentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.medicamentos"
+    },
+    "notas": {
+      "type": "text"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "condiciones_medicas"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "vacunas",
+  "info": {
+    "name": "vacunas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "contra": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "detalles": {
+      "type": "string"
+    },
+    "lote": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "text"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "vacunas"
+    }
+  }
+}

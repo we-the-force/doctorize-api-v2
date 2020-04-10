@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/condicion-medicas",
+      "handler": "condicion-medica.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/condicion-medicas/count",
+      "handler": "condicion-medica.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/condicion-medicas/:id",
+      "handler": "condicion-medica.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/condicion-medicas",
+      "handler": "condicion-medica.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/condicion-medicas/:id",
+      "handler": "condicion-medica.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/condicion-medicas/:id",
+      "handler": "condicion-medica.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -26,6 +26,9 @@
       "type": "component",
       "repeatable": true,
       "component": "perfil-paciente.medicamentos"
+    },
+    "notas": {
+      "type": "string"
     }
   }
 }

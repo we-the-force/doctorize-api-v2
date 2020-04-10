@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "alergias",
+  "info": {
+    "name": "alergias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "causa": {
+      "type": "string"
+    },
+    "reacciones": {
+      "type": "string"
+    },
+    "frecuencia": {
+      "type": "string"
+    },
+    "primer_diagnostico": {
+      "type": "date"
+    },
+    "medicamentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "perfil-paciente.medicamentos"
+    },
+    "notas": {
+      "type": "text"
+    },
+    "paciente": {
+      "via": "alergias",
+      "model": "paciente"
+    }
+  }
+}

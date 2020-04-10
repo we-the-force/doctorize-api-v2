@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hospitalizaciones",
+      "handler": "hospitalizaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hospitalizaciones/count",
+      "handler": "hospitalizaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hospitalizaciones/:id",
+      "handler": "hospitalizaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hospitalizaciones",
+      "handler": "hospitalizaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hospitalizaciones/:id",
+      "handler": "hospitalizaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hospitalizaciones/:id",
+      "handler": "hospitalizaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

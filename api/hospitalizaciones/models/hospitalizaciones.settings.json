@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "hospitalizaciones",
+  "info": {
+    "name": "hospitalizaciones"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "admision": {
+      "type": "date"
+    },
+    "alta": {
+      "type": "date"
+    },
+    "proveedor_atencion_medica": {
+      "type": "string"
+    },
+    "hospital": {
+      "type": "string"
+    },
+    "razon": {
+      "type": "string"
+    },
+    "resumen": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "hospitalizaciones"
+    }
+  }
+}

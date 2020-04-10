@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/historia-familiars",
+      "handler": "historia-familiar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/historia-familiars/count",
+      "handler": "historia-familiar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/historia-familiars/:id",
+      "handler": "historia-familiar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/historia-familiars",
+      "handler": "historia-familiar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/historia-familiars/:id",
+      "handler": "historia-familiar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/historia-familiars/:id",
+      "handler": "historia-familiar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

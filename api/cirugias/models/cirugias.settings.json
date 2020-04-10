@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "cirugias",
+  "info": {
+    "name": "cirugias"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "implante": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "especialista": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "text"
+    },
+    "paciente": {
+      "model": "paciente",
+      "via": "cirugias"
+    }
+  }
+}

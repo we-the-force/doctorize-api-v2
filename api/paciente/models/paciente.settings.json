@@ -37,45 +37,10 @@
       "plugin": "upload",
       "required": false
     },
-    "condicion_medica": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.condiciones-medicas"
-    },
-    "Alergias": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.alergias"
-    },
     "Historia_social": {
       "type": "component",
       "repeatable": false,
       "component": "perfil-paciente.historia-social"
-    },
-    "HIstoria_familiar": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.historia-familiar"
-    },
-    "contraindicaciones": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.contraindicaciones"
-    },
-    "hospitalizacion": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.hospitalizaciones"
-    },
-    "cirugias": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.cirugias"
-    },
-    "vacunas": {
-      "type": "component",
-      "repeatable": true,
-      "component": "perfil-paciente.vacunas"
     },
     "medicamentos": {
       "collection": "medicamentos",
@@ -105,6 +70,34 @@
     "doctor": {
       "model": "doctor",
       "via": "pacientes"
+    },
+    "alergias": {
+      "collection": "alergias",
+      "via": "paciente"
+    },
+    "cirugias": {
+      "via": "paciente",
+      "collection": "cirugias"
+    },
+    "condiciones_medicas": {
+      "via": "paciente",
+      "collection": "condicion-medica"
+    },
+    "contraindicaciones": {
+      "via": "paciente",
+      "collection": "contraindicaciones"
+    },
+    "hospitalizaciones": {
+      "via": "paciente",
+      "collection": "hospitalizaciones"
+    },
+    "historias_familiares": {
+      "via": "paciente",
+      "collection": "historia-familiar"
+    },
+    "vacunas": {
+      "via": "paciente",
+      "collection": "vacunas"
     }
   }
 }

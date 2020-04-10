@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cirugias",
+      "handler": "cirugias.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cirugias/count",
+      "handler": "cirugias.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cirugias/:id",
+      "handler": "cirugias.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cirugias",
+      "handler": "cirugias.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cirugias/:id",
+      "handler": "cirugias.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cirugias/:id",
+      "handler": "cirugias.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
