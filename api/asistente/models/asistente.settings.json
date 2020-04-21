@@ -33,8 +33,8 @@
       "via": "asistente"
     },
     "doctor": {
-      "model": "doctor",
-      "via": "asistentes"
+      "via": "asistentes",
+      "model": "doctor"
     },
     "Activo": {
       "type": "boolean",

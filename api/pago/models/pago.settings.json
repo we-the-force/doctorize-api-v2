@@ -29,8 +29,8 @@
       "model": "paciente"
     },
     "doctor": {
-      "model": "doctor",
-      "via": "pagos"
+      "via": "pagos",
+      "model": "doctor"
     },
     "consulta": {
       "model": "consulta",

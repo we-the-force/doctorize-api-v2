@@ -22,8 +22,8 @@
       "model": "consultorio"
     },
     "doctor": {
-      "model": "doctor",
-      "via": "horarios"
+      "via": "horarios",
+      "model": "doctor"
     },
     "asistente": {
       "model": "asistente",

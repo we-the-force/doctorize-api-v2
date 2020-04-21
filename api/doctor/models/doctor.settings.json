@@ -25,28 +25,31 @@
       "via": "doctor"
     },
     "horarios": {
-      "via": "doctor",
-      "collection": "horarios"
+      "collection": "horarios",
+      "via": "doctor"
     },
     "consultorios": {
-      "via": "doctor",
-      "collection": "consultorio"
+      "collection": "consultorio",
+      "via": "doctor"
     },
     "pagos": {
-      "via": "doctor",
-      "collection": "pago"
+      "collection": "pago",
+      "via": "doctor"
     },
     "citas": {
-      "via": "doctor",
-      "collection": "cita"
+      "collection": "cita",
+      "via": "doctor"
     },
     "asistentes": {
-      "via": "doctor",
-      "collection": "asistente"
+      "collection": "asistente",
+      "via": "doctor"
     },
     "pacientes": {
-      "via": "doctor",
-      "collection": "paciente"
+      "collection": "paciente",
+      "via": "doctor"
+    },
+    "correo": {
+      "type": "email"
     }
   }
 }

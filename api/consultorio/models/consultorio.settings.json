@@ -35,8 +35,8 @@
       "type": "float"
     },
     "doctor": {
-      "model": "doctor",
-      "via": "consultorios"
+      "via": "consultorios",
+      "model": "doctor"
     },
     "HorarioApertura": {
       "type": "time"

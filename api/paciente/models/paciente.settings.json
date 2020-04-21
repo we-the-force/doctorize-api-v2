@@ -68,8 +68,8 @@
       "via": "paciente"
     },
     "doctor": {
-      "model": "doctor",
-      "via": "pacientes"
+      "via": "pacientes",
+      "model": "doctor"
     },
     "alergias": {
       "collection": "alergias",

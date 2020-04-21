@@ -30,8 +30,8 @@
       "model": "consultorio"
     },
     "doctor": {
-      "model": "doctor",
-      "via": "citas"
+      "via": "citas",
+      "model": "doctor"
     },
     "hora": {
       "type": "time"
