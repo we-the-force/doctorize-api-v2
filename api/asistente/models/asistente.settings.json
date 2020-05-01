@@ -33,16 +33,20 @@
       "via": "asistente"
     },
     "doctor": {
-      "via": "asistentes",
-      "model": "doctor"
+      "model": "doctor",
+      "via": "asistentes"
     },
     "Activo": {
       "type": "boolean",
       "default": true
     },
     "horarios": {
-      "via": "asistente",
-      "collection": "horarios"
+      "collection": "horarios",
+      "via": "asistente"
+    },
+    "Confirmed": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

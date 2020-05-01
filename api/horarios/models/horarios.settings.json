@@ -26,8 +26,8 @@
       "model": "doctor"
     },
     "asistente": {
-      "model": "asistente",
-      "via": "horarios"
+      "via": "horarios",
+      "model": "asistente"
     },
     "Activo": {
       "type": "boolean",

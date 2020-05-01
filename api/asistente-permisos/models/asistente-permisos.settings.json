@@ -27,8 +27,8 @@
       "model": "asistente"
     },
     "consultorio": {
-      "model": "consultorio",
-      "via": "asistente_consultorios"
+      "via": "asistente_consultorios",
+      "model": "consultorio"
     }
   }
 }

@@ -22,9 +22,6 @@
     "hospital": {
       "type": "string"
     },
-    "numero": {
-      "type": "integer"
-    },
     "direccion": {
       "type": "text"
     },
@@ -35,8 +32,8 @@
       "type": "float"
     },
     "doctor": {
-      "via": "consultorios",
-      "model": "doctor"
+      "model": "doctor",
+      "via": "consultorios"
     },
     "HorarioApertura": {
       "type": "time"
@@ -60,8 +57,11 @@
       "default": true
     },
     "asistente_consultorios": {
-      "via": "consultorio",
-      "collection": "asistente-permisos"
+      "collection": "asistente-permisos",
+      "via": "consultorio"
+    },
+    "numero": {
+      "type": "string"
     }
   }
 }

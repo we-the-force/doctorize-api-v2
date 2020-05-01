@@ -29,8 +29,8 @@
       "via": "doctor"
     },
     "consultorios": {
-      "collection": "consultorio",
-      "via": "doctor"
+      "via": "doctor",
+      "collection": "consultorio"
     },
     "pagos": {
       "collection": "pago",
@@ -41,8 +41,8 @@
       "via": "doctor"
     },
     "asistentes": {
-      "collection": "asistente",
-      "via": "doctor"
+      "via": "doctor",
+      "collection": "asistente"
     },
     "pacientes": {
       "collection": "paciente",
